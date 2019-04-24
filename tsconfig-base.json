@@ -1,0 +1,37 @@
+{
+  "exclude": ["node_modules", "typings/main.d.ts", "typings/main", "**/*.spec.ts"],
+  "compilerOptions": {
+    "declaration": true, // 生成相应的 .d.ts文件, 与alowJs互斥
+    "rootDir": ".",
+    "rootDirs": ["src", "test", "examples"], // 虚拟目录，把数组中的目录映射到
+    "outDir": "./dist", // 生成的所有文件放在built目录下
+    // "allowJs": true, // 包含.js文件，默认ts编译器仅包含.ts
+    "target": "es5", // 将JavaScript代码降级到低版本比如ECMAScript 5
+    // "module": "es2015", // 即使我们使用了ES2015的模块语法，TypeScript还是会生成Node.js使用的CommonJS模块,通过修改 module选项来改变这个行为。
+    "module": "system",
+    "moduleResolution": "node", // 模块解析策略: node(Node), classic(这种策略在以前是TypeScript默认的解析策略。 现在，它存在的理由主要是为了向后兼容。)
+    "removeComments": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "noImplicitAny": true,
+    "pretty": true,
+    "lib": ["es2015.iterable", "es5"],
+    "declarationMap": true,
+    "sourceMap": true,
+    "composite": true,
+    "noEmitOnError": true,
+    "strictNullChecks": true,
+    "noImplicitThis": true,
+    "strictPropertyInitialization": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+
+    "skipLibCheck": true,
+
+    "alwaysStrict": true,
+    "preserveConstEnums": true,
+    "newLine": "lf",
+
+    "types": []
+  }
+}

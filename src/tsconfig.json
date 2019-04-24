@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "baseUrl": "../", // This must be specified if "paths" is.
+    "paths": { // 加载器使用映射配置来将模块名映射到运行时的文件, 解决有些模块文件找不到问题
+      "jquery": ["node_modules/jquery/dist/jquery"] // 此处映射是相对于baseUrl, 如果不指定可能加载的是node_modules/jquery/dist/jquery.slim.min.js而不是node_modules/jquery/dist/jquery.min.js
+    }
+  }
+}
