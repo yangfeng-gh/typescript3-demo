@@ -1,12 +1,11 @@
 {
   "extends": "./tsconfig-base",
-  "files": [],
   "include": [
     "src/**/*",
     "test/**/*"
   ],
   "references": [
       { "path": "./src" },
-      { "path": "./test" },
+      { "path": "./test" }
   ]
 }
